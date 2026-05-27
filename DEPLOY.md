@@ -24,9 +24,9 @@ Eerst even openen in browser om te checken dat 'm goed staat.
 2. Klik **Add Domain**
 3. Voer in: `chopchopamsterdam.com` → Add
 4. Voer ook in: `www.chopchopamsterdam.com` → Add (zet `www` als redirect naar apex of andersom)
-5. Vercel toont nu **2 vereiste DNS-records** — noteer ze:
-   - Voor apex (`chopchopamsterdam.com`): **A-record** naar een Vercel IP (meestal `76.76.21.21`)
-   - Voor www: **CNAME-record** naar `cname.vercel-dns.com`
+5. Vercel toont nu de **vereiste DNS-records** — bevestigd voor dit project:
+   - Voor `www.chopchopamsterdam.com`: **CNAME** naar `daea8ffc023c294a.vercel-dns-017.com.`
+   - Voor apex `chopchopamsterdam.com`: **A-record** — exacte IP staat in Vercel UI (meestal `76.76.21.21`)
 6. Status zal "Invalid Configuration" zijn — dat is OK, fixen we in stap 3
 
 ---
@@ -55,7 +55,7 @@ Doel: TTL verlagen zodat de DNS-flip straks snel propageert.
 4. **Verwijder/wijzig** de www-record:
    - Host: `www`
    - Type: `CNAME`
-   - Waarde: `cname.vercel-dns.com`
+   - Waarde: `daea8ffc023c294a.vercel-dns-017.com.` (let op de eind-punt)
    - TTL: 300
 5. Opslaan
 

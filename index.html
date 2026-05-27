@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Looking for ChopChop Amsterdam? We're now Lucky Duck</title>
+<meta name="description" content="ChopChop Amsterdam is now Lucky Duck. Same team, same address, new name. Visit us at luckyduckamsterdam.com" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@1,500&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --crimson: #811721;
+    --cream:   #EFE7DC;
+    --ink:     #1a1a1a;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; min-height: 100%; }
+  body {
+    font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 6vh 8vw;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .card {
+    max-width: 560px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .duck-mark {
+    height: 120px;
+    width: auto;
+    margin-bottom: 2rem;
+    filter: brightness(0) saturate(100%) invert(13%) sepia(73%) saturate(2698%) hue-rotate(338deg) brightness(95%) contrast(99%);
+  }
+
+  .looking-for {
+    font-size: 0.74rem;
+    letter-spacing: 0.36em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--crimson);
+    opacity: 0.8;
+    margin: 0 0 1.4rem;
+  }
+
+  h1 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    line-height: 1.2;
+    margin: 0 0 1rem;
+    color: var(--ink);
+  }
+
+  .logo-wordmark {
+    height: 0.85em;
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -0.05em;
+    margin-left: 0.3em;
+  }
+
+  .sub {
+    font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+    line-height: 1.65;
+    color: #3a2a2a;
+    opacity: 0.85;
+    margin: 0 0 2.6rem;
+    max-width: 60ch;
+  }
+
+  .cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.85rem;
+    padding: 1.25rem 2.4rem;
+    background: var(--crimson);
+    color: var(--cream);
+    text-decoration: none;
+    font-size: 0.92rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 2px;
+    box-shadow: 0 10px 28px rgba(129,23,33,0.2);
+    transition: background 0.22s ease, transform 0.22s ease;
+    min-height: 56px;
+  }
+  .cta:hover { background: #6a1219; transform: translateY(-2px); }
+  .cta .arrow { transition: transform 0.22s ease; }
+  .cta:hover .arrow { transform: translateX(5px); }
+
+  .url {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.16em;
+    color: var(--crimson);
+    opacity: 0.75;
+    text-transform: lowercase;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <img class="duck-mark" src="farewell-duck-mark.png" alt="" aria-hidden="true" />
+
+    <p class="looking-for">Looking for ChopChop Amsterdam?</p>
+
+    <h1>We're now <img class="logo-wordmark" src="farewell-luckyduck-logo-red.png" alt="Lucky Duck" /></h1>
+
+    <p class="sub">
+      We are continuing under our new name: Lucky Duck.<br />
+      Same team, same location, same experience &mdash; just a new name.
+      <br /><br />
+      Visit us at Voetboogstraat 13.
+    </p>
+
+    <a class="cta" href="https://www.luckyduckamsterdam.com" rel="noopener">
+      Visit Lucky Duck <span class="arrow">→</span>
+    </a>
+    <span class="url">www.luckyduckamsterdam.com</span>
+  </div>
+</body>
+</html>
